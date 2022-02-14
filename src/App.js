@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import GenerateQR from './GenerateQR'
+import './main.css'
+import ScanFile from './ScanFile'
+import WebScan from './WebScan'
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      {/* <Router> */}
+      <main className="container">
+        <GenerateQR />
+        <ScanFile />
+        <WebScan />
+        {/* <Routes> */}
+        {/* <Route path='/' element={<GenerateQR />} />
+            <Route path='/upload' element={<ScanFile />} />
+            <Route path='/webscan' element={<WebScan />} />
+          </Routes> */}
+      </main>
+      {/* </Router> */}
+    </>
+  )
 }
 
-export default App;
+export default App
