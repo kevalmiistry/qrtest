@@ -9,16 +9,19 @@ function App() {
 
   return (
     <>
-      <Router>
-        <main className="container">
-          <Routes>
+      {/* <Router> */}
+      <main className="container">
+        <GenerateQR />
+        <ScanFile />
+        <WebScan />
+        {/* <Routes>
             <Route path='/' element={<GenerateQR />} />
             <Route path='/upload' element={<ScanFile />} />
             <Route path='/webscan' element={<WebScan />} />
             <Route path='/done' element={<Done />} />
-          </Routes>
-        </main>
-      </Router>
+          </Routes> */}
+      </main>
+      {/* </Router> */}
     </>
   )
 }

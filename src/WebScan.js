@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import QrReader from 'react-qr-reader'
 
 const WebScan = () => {
-    let hist = useNavigate(null)
+    // let hist = useNavigate(null)
     const [scanWebCam, setScanWebCam] = useState('')
 
     const handleErrorWebcam = (error) => {
@@ -14,8 +14,9 @@ const WebScan = () => {
     const handleScanWebcam = async (result) => {
         if (result === 'MONGO') {
             console.log(result)
-            handleFetch(result)
-            hist('/done')
+            // handleFetch(result)
+            // hist('/done')
+            setScanWebCam(result)
         }
         // setScanWebCam(result)
     }
