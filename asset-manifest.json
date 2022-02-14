@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/qrtest/static/css/main.6d3cbfd2.css",
+    "main.js": "/qrtest/static/js/main.c0ffe2cf.js",
+    "index.html": "/qrtest/index.html",
+    "main.6d3cbfd2.css.map": "/qrtest/static/css/main.6d3cbfd2.css.map",
+    "main.c0ffe2cf.js.map": "/qrtest/static/js/main.c0ffe2cf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d3cbfd2.css",
+    "static/js/main.c0ffe2cf.js"
+  ]
+}
